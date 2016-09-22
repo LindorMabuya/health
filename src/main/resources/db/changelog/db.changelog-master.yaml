@@ -1,0 +1,35 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: jkutner
+      changes:
+        - createTable:
+            tableName: record
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: animalname
+                  type: varchar(255)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: adoptername
+                  type: varchar(255)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: adoptersurname
+                  type: varchar(255)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: phonenumber
+                  type: varchar(255)
+                  constraints:
+                    nullable: true
