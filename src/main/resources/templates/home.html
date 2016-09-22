@@ -23,12 +23,12 @@
         <div class="col-md-12 col-lg-6">
             <form th:object="${insertRecord}" method="POST">
                 <div class="form-group">
-                   <label for="data">Animal Name</label>
-                    <input id="data" type="text" class="form-control" placeholder="Animal name" th:field="*{animalname}" />
-                    <label for="data">Adopter Name</label>
-                    <input id="data" type="text" class="form-control" placeholder="Name" th:field="*{adoptername}" />
-                    <label for="data">Adopter Surname</label>
-                    <input id="data" type="text" class="form-control" placeholder="Surname" th:field="*{adoptersurname}" />
+                   <label for="data">First Name</label>
+                    <input id="data" type="text" class="form-control" placeholder="First name" th:field="*{firstname}" />
+                    <label for="data">Last Name</label>
+                    <input id="data" type="text" class="form-control" placeholder="Last name" th:field="*{lastname}" />
+                    <label for="data">Address</label>
+                    <input id="data" type="text" class="form-control" placeholder="Address" th:field="*{address}" />
                     <label for="data">Phone Number</label>
                   <input id="data" type="text" class="form-control" placeholder="phonenumber" th:field="*{phonenumber}" />
                   </div>
@@ -49,9 +49,9 @@
                 <tbody>
                     <tr th:each="record : ${records}">
                         <td th:text="${record.id}">Some text</td>
-                        <td th:text="${record.animalname}">Some text</td>
-                        <td th:text="${record.adoptername}">Some text</td>
-                        <td th:text="${record.adoptersurname}">Some text</td>
+                        <td th:text="${record.firstname}">Some text</td>
+                        <td th:text="${record.lastname}">Some text</td>
+                        <td th:text="${record.address}">Some text</td>
                         <td th:text="${record.phonenumber}">Some text</td>
                 </tr>
                 </tbody>
