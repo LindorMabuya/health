@@ -24,7 +24,7 @@ databaseChangeLog:
                   constraints:
                     nullable: true
               - column:
-                  name: address
+                  name: style
                   type: varchar(255)
                   constraints:
                     nullable: true
