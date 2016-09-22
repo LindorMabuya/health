@@ -17,7 +17,7 @@ public class Record {
     private String firstname;
     
     private String lastname;
-    private String address;
+    private String style;
     private String phonenumber;
     
     public long getId(){
@@ -50,12 +50,12 @@ public class Record {
         this.lastname = lastname;
     }
     
-     public String getAddress() {
-        return address;
+     public String getStyle() {
+        return style;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setStyle(String style) {
+        this.style = style;
     }
     
  }
