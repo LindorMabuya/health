@@ -27,8 +27,8 @@
                     <input id="data" type="text" class="form-control" placeholder="First name" th:field="*{firstname}" />
                     <label for="data">Last Name</label>
                     <input id="data" type="text" class="form-control" placeholder="Last name" th:field="*{lastname}" />
-                    <label for="data">Address</label>
-                    <input id="data" type="text" class="form-control" placeholder="Address" th:field="*{address}" />
+                    <label for="data">Style</label>
+                    <input id="data" type="text" class="form-control" placeholder="Style" th:field="*{style}" />
                     <label for="data">Phone Number</label>
                   <input id="data" type="text" class="form-control" placeholder="phonenumber" th:field="*{phonenumber}" />
                   </div>
@@ -51,7 +51,7 @@
                         <td th:text="${record.id}">Some text</td>
                         <td th:text="${record.firstname}">Some text</td>
                         <td th:text="${record.lastname}">Some text</td>
-                        <td th:text="${record.address}">Some text</td>
+                        <td th:text="${record.style}">Some text</td>
                         <td th:text="${record.phonenumber}">Some text</td>
                 </tr>
                 </tbody>
